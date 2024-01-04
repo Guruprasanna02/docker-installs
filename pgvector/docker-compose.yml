@@ -6,6 +6,7 @@ services:
     image: ankane/pgvector
     restart: unless-stopped
     environment:
+      POSTGRES_DB: hackathon
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     volumes:
